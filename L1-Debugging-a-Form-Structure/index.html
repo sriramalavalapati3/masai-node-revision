@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging a Form Structure</title>
+</head>
+<body>
+    <form action="/submit">
+  <label for="username">Enter Username:</label>
+  <input type="text" id="username" name="username">
+
+  <label for="passcode">Password:</label>
+  <input type="password" id="passcode" name="password">
+
+  <button type="submit">Submit Form</button>
+</form>
+
+
+</body>
+</html>
+
+<!-- 
+In the above debugging example, the form structure is debuuged what are issues
+1.for username label it is given Name as attribute instead of for
+2.in username input for name attribute username is not closed with a closing quote
+because that causes HTML parsing errors if left unclosed.
+3.Typo: typ should be corrected to type for proper attribute recognition.
+4.we are not supposed to use Submit inside the tag is invalid instead we have to use type="submit", closing tag misspelled (</buttn> ➔ </button>).
+-->
