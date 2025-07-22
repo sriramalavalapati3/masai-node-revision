@@ -1,0 +1,48 @@
+.parent{
+    width:98%;
+    height:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 50px;
+}
+
+.parent .child{
+    height:50vh;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.child p{
+    border: 2px solid black;
+}
+
+.parent .child:nth-child(1){
+    background-color: red;
+    box-sizing: border-box;
+    width:250px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid black;
+}
+.parent .child:nth-child(2){
+    background-color: green;
+    box-sizing: content-box;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px dashed
+}
+.parent .child:nth-child(3){
+    background-color: blue;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+      flex-shrink: 0;
+}
