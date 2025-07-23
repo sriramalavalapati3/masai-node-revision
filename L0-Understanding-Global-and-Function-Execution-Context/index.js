@@ -10,5 +10,5 @@ function UpdateAge(newAge) {
 }
 
 DisplayAge(); // Outputs: Age is: 30
-UpdateAge(35); // Outputs: Age updated to: 35
+UpdateAge(37); // Outputs: Age updated to: 35
 DisplayAge(); // Outputs: Age is: 35
