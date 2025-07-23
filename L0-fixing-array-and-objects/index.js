@@ -47,5 +47,5 @@ library.addBook({ title:"my life", author: "George Orwell", year: 1949 });
 console.log(library.books.length);
 console.log(library.books);
 console.log(library.findBookByTitle("The Hobbit"));
-library.removeBook("The Hobbit");
+library.removeBook("The Hobbit ");
 console.log(library.books.length);
