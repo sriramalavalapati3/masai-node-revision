@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border: 1px solid black;
+}
+
+.text {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+@media (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;     
+        gap: 10px;
+        min-height: 50vh;
+        max-width: 260px; /* 2 boxes * 100px + 1 gap (20px) + some padding */
+        margin: 0 auto;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex: 1 1 calc(100% - 40px);
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Debugging Task</h1>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <p class="text">Fix my position!</p>
+</body>
+</html>
+
+
+<!-- Changes Made:
+
+Used Flexbox for Layout:
+
+Applied display: flex, flex-wrap: wrap, and justify-content: space-around in .container to arrange boxes responsively.
+
+Added Media Queries:
+
+For tablet view (max-width: 992px):
+
+Centered the container using margin: 0 auto and restricted its width to 260px for proper alignment of 2 boxes.
+
+For mobile view (max-width: 600px):
+
+Changed layout to vertical using flex-direction: column.
+
+Centered Fixed Text:
+
+Used position: fixed, left: 50%, and transform: translateX(-50%) to horizontally center the floating .text element. -->
