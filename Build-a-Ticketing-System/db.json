@@ -1,0 +1,20 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Login Issue",
+      "description": "Unable to login with corporate SSO",
+      "priority": "high",
+      "user": "Alice",
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "title": "Page not loading",
+      "description": "Dashboard sometimes times out",
+      "priority": "medium",
+      "user": "Bob",
+      "status": "resolved"
+    }
+  ]
+}
